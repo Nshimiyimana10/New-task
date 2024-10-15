@@ -7,7 +7,8 @@ button.addEventListener("click", addTask);
 
 function addTask(){
  const inputValue = input.value.trim();
- input = "";
+
+ console.log(inputValue)
  
  
 
