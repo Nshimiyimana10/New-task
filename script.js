@@ -7,10 +7,8 @@ button.addEventListener("click", addTask);
 
 function addTask(){
  const inputValue = input.value.trim();
-
- console.log(inputValue)
- 
- 
-
+const li = document.createElement("li");
+li.textContent = inputValue;
+listItems.appendChild(li);
 
 }
