@@ -7,8 +7,8 @@ button.addEventListener("click", addTask);
 
 function addTask(){
  const inputValue = input.value.trim();
-const li = document.createElement("li");
-li.textContent = inputValue;
-listItems.appendChild(li);
+ const li = document.createElement("li");
+ li.textContent = inputValue;
+ listItems.appendChild(li);
 
 }
