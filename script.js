@@ -4,6 +4,7 @@ const listItems = document.getElementById("list-items");
 const inputError = document.getElementById("input_error");
 
 button.addEventListener("click", addTask);
+listItems.addEventListener("click", removeItem)
 
 function addTask(){
  const inputValue = input.value.trim();
@@ -17,4 +18,11 @@ function addTask(){
  li.appendChild(removeBtn);
 
 
+}
+
+function removeItem(e){
+  if(e.target.classList.contains("remove-btn")){
+    const li = e.target.parentElement;
+    listItems.removeChild(li);
+  }
 }
