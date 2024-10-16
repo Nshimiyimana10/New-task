@@ -7,17 +7,16 @@ button.addEventListener("click", addTask);
 listItems.addEventListener("click", removeItem)
 
 function addTask(){
- const inputValue = input.value.trim();
+ let inputValue = input.value.trim();
  const li = document.createElement("li");
  li.textContent = inputValue;
+ console.log(allValues);
  listItems.appendChild(li);
  li.classList.add("list");
  const removeBtn = document.createElement("button");
  removeBtn.classList.add("remove-btn");
  removeBtn.textContent = "remove";
  li.appendChild(removeBtn);
-
-
 }
 
 function removeItem(e){
