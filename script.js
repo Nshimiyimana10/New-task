@@ -11,5 +11,6 @@ function addTask(){
  li.textContent = inputValue;
  listItems.appendChild(li);
  li.classList.add("list");
+ 
 
 }
