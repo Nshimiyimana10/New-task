@@ -44,4 +44,6 @@ body{
     margin-top: 5px;
     padding: 5px;
     margin-bottom: 10px;
+    position: relative;
+    font-size: 18px;
 }

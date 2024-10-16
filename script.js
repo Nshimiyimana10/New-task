@@ -11,6 +11,10 @@ function addTask(){
  li.textContent = inputValue;
  listItems.appendChild(li);
  li.classList.add("list");
- 
+ const removeBtn = document.createElement("button");
+ removeBtn.classList.add("remove-btn");
+ removeBtn.textContent = "remove";
+ li.appendChild(removeBtn);
+
 
 }
