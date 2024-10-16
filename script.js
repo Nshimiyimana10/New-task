@@ -10,7 +10,6 @@ function addTask(){
  let inputValue = input.value.trim();
  const li = document.createElement("li");
  li.textContent = inputValue;
- console.log(allValues);
  listItems.appendChild(li);
  li.classList.add("list");
  const removeBtn = document.createElement("button");
